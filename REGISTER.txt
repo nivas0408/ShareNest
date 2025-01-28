@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - ShareNest</title>
+
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #2a2a2a, #121212); /* Deep gradient background */
+            background-size: cover;
+            color: #fff;
+            position: relative;
+        }
+
+        /* Decorative background pattern or texture */
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Optional luxurious texture (e.g., marble, cityscape, etc.) */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+        }
+
+        .registration-container {
+            position: relative;
+            background: rgba(0, 0, 0, 0.7); /* Transparent black for depth */
+            width: 480px;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .logo-container {
+            font-family: 'Merriweather', serif;
+            font-size: 45px;
+            font-weight: 700;
+            color: #F39C12; /* Gold */
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6); /* Luxurious glow */
+        }
+
+        .logo-container span {
+            font-size: 35px;
+            display: block;
+            margin-top: 10px;
+            color: #ddd;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.4); /* Slight transparency for luxury feel */
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #F39C12; /* Gold focus border */
+            box-shadow: 0 0 12px rgba(243, 156, 18, 0.8); /* Glowing effect */
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background-color: #F39C12; /* Premium gold button */
+            color: #1a1a1a;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover {
+            background-color: #e67e22; /* Slightly darker gold on hover */
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5); /* Elevation effect */
+        }
+
+        .login-link {
+            font-size: 14px;
+            color: #ddd;
+            text-decoration: none;
+            margin-top: 20px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .login-link:hover {
+            color: #F39C12; /* Gold on hover */
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .registration-container:hover {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-pattern"></div>
+
+    <div class="registration-container">
+        <div class="logo-container">
+            <div>ShareNest</div>
+            <span>Your exclusive platform</span>
+        </div>
+        <h2>Create Your Account</h2>
+        <form action="#" method="POST">
+            <input type="text" class="input-field" placeholder="Username" required><br>
+            <input type="text" class="input-field" placeholder="Full Name" required><br>
+            <input type="email" class="input-field" placeholder="Email Address" required><br>
+            <input type="password" class="input-field" placeholder="Password" required><br>
+            <input type="password" class="input-field" placeholder="Confirm Password" required><br>
+            
+            <!-- Branch Selection Dropdown -->
+            <select class="input-field" required>
+                <option value="" disabled selected>Select Your Branch</option>
+                <option value="CSE">CSE</option>
+                <option value="CSM">CSM</option>
+                <option value="CSD">CSD</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="ECE">ECE</option>
+                <option value="IOT">IOT</option>
+            </select><br>
+
+            <!-- Academic Year Selection Dropdown -->
+            <select class="input-field" id="academic-year" required>
+                <option value="" disabled selected>Select Your Academic Year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select><br>
+
+            <!-- Starting Year and Ending Year -->
+            <input type="number" class="input-field" id="start-year" placeholder="Starting Year" readonly><br>
+            <input type="number" class="input-field" id="end-year" placeholder="Ending Year" readonly><br>
+
+            <!-- Phone Number -->
+            <input type="tel" class="input-field" placeholder="Phone Number" required><br>
+            
+            <!-- Profile Picture Upload -->
+            <input type="file" class="input-field" placeholder="Upload Profile Picture" accept="image/*"><br>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+        <a href="login.html" class="login-link">Already have an account? Login here</a>
+    </div>
+
+    <script>
+        // Get the dropdown for academic year selection
+        const academicYearSelect = document.getElementById('academic-year');
+        const startYearInput = document.getElementById('start-year');
+        const endYearInput = document.getElementById('end-year');
+
+        // Update the starting and ending year based on academic year
+        academicYearSelect.addEventListener('change', function() {
+            const currentYear = new Date().getFullYear();
+            const selectedYear = parseInt(academicYearSelect.value);
+
+            // Calculate the starting and ending year based on selection
+            const startYear = currentYear + selectedYear - 1; // e.g., 1st Year -> 2025
+            const endYear = startYear + 1; // e.g., 1st Year -> 2026
+
+            // Set the values in the respective inputs
+            startYearInput.value = startYear;
+            endYearInput.value = endYear;
+        });
+    </script>
+
+</body>
+</html>

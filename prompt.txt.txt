@@ -1,0 +1,1 @@
+develop ShareNest , an interactive and user-friendly web platform for a college community. the platform enables students to upload,share and rate academic project across various subjects. this system fosters collaboration , encourages innovation creates a centrailezed repository  of knowledge that benifits both currenr students and future students

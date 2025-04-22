@@ -1,0 +1,388 @@
+HOME PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareNest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ShareNest</h1>
+        <p>Your Ultimate Academic Hub</p>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+    <main>
+        <section class="image-section">
+            <img src="path/to/your/image.jpg" alt="Description of the image">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ShareNest</p>
+    </footer>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
+    color: #777;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background: #ffffff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+BLOG PAGE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareNest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ShareNest</h1>
+        <input type="text" placeholder="Search" class="search-bar">
+    </header>
+    <main>
+        <section class="posts">
+            <h2>All Posts</h2>
+            <article class="post">
+                <img src="laptop.jpg" alt="Laptop">
+                <h3>Empower College Students With ShareNest: A...</h3>
+                <p>In today's digital age, collaboration and innovation are key drivers of success, especially in academic settings. Imagine a platform...</p>
+                <p>Feb 11 | 2 min read | 3 views | 0 comments</p>
+            </article>
+            <article class="post">
+                <img src="students.jpg" alt="Students">
+                <h3>Elevate Student Projects with...</h3>
+                <p>Exciting opportunities for collaboration and enhancement of student projects await. Discover more...</p>
+                <p>Feb 11 | 3 min read | 5 views | 2 comments</p>
+            </article>
+            <!-- Add more posts as needed -->
+        </section>
+    </main>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.search-bar {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.posts {
+    max-width: 800px;
+    margin: auto;
+}
+
+.post {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.post p {
+    color: #666;
+}
+
+PORTFOLIO PAGE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header>
+        <h1>MY PORTFOLIO</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome to my portfolio.</h2>
+            <p>Here you'll find a selection of my work. Explore my projects to learn more about what I do.</p>
+        </section>
+
+        <section id="projects">
+            <div class="project-card">
+                <img src="path/to/image1.jpg" alt="Project 1">
+                <p>Project Description</p>
+            </div>
+            <div class="project-card">
+                <img src="path/to/image2.jpg" alt="Project 2">
+                <p>Project Description</p>
+            </div>
+            <div class="project-card">
+                <img src="path/to/image3.jpg" alt="Project 3">
+                <p>Project Description</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name</p>
+    </footer>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+UPLOAD PROJECT:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ShareNest</h1>
+            <input type="text" id="search" placeholder="Search 'Files & Folders'...">
+        </header>
+        <button id="addFolder">New Folder</button>
+        <button id="addFile">Add File</button>
+        <div id="fileList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-right: 10px;
+}
+
+#fileList {
+    margin-top: 20px;
+}
+
+.file-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+document.getElementById('addFolder').addEventListener('click', () => {
+    const folderName = prompt('Enter folder name:');
+    if (folderName) {
+        addFileItem(`Folder: ${folderName}`);
+    }
+});
+
+document.getElementById('addFile').addEventListener('click', () => {
+    const fileName = prompt('Enter file name:');
+    if (fileName) {
+        addFileItem(`File: ${fileName}`);
+    }
+});
+
+function addFileItem(name) {
+    const fileList = document.getElementById('fileList');
+    const fileItem = document.createElement('div');
+    fileItem.className = 'file-item';
+    fileItem.textContent = name;
+    fileList.appendChild(fileItem);
+}
+
+MEMBERS PAGE:
+// Import necessary Wix modules
+import wixUsers from 'wix-users';
+import wixData from 'wix-data';
+
+// On page load
+$w.onReady(function () {
+    // Get the current user
+    wixUsers.currentUser.getEmail()
+        .then((email) => {
+            // Fetch user data from your database collections
+            return wixData.query("Members") // replace "Members" with your actual database name
+                .eq("email", email)
+                .find();
+        })
+        .then((results) => {
+            if (results.items.length > 0) {
+                const memberData = results.items[0];
+                // Populate the profile box with member data
+                $w("#usernameText").text = memberData.username; // replace with your text element ID
+                $w("#followersText").text = memberData.followers.toString(); // replace with your text element ID
+                $w("#followingText").text = memberData.following.toString(); // replace with your text element ID
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+});
+
+// Button click event to redirect to profile page
+export function myProfileButton_click(event) {
+    wixLocation.to("/my-profile-page"); // replace with your actual profile page link
+}
+
